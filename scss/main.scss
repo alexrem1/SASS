@@ -1,3 +1,7 @@
+$primary-color: aqua;
+$accent-color: rgb(233, 34, 34);
+$text-color: #fff;
+
 body {
-  color: aquamarine;
+  background: $primary-color;
 }
