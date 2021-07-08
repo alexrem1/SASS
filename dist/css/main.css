@@ -18,18 +18,20 @@ body {
 .main .main-title {
   color: blue;
   padding: 0%;
-  font-weight: weight(lighter);
+  font-weight: 100;
 }
 
 .main .main-title:hover {
   color: red;
+  font-weight: 700;
 }
 
 .main .main-paragraph {
-  font-weight: 700;
+  font-weight: 100;
 }
 
 .main .main-paragraph:hover {
   color: #f700ff;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
