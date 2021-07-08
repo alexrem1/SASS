@@ -1,7 +1,37 @@
 $primary-color: aqua;
 $accent-color: rgb(233, 34, 34);
 $text-color: #fff;
+$font-weights: (
+  "lighter": 100,
+  "regular": 400,
+  "medium": 500,
+  "bold": 700,
+);
 
 body {
   background: $primary-color;
+  color: $text-color;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  #{&}-title {
+    color: blue;
+    padding: 0%;
+    font-weight: weight(lighter);
+
+    &:hover {
+      color: red;
+    }
+  }
+
+  #{&}-paragraph {
+    font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: rgb(247, 0, 255);
+    }
+  }
 }
