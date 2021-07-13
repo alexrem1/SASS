@@ -34,7 +34,9 @@ body {
 
 .main {
   @include flexCenter(row);
-  width: 80%;
+  // instead of width: calc(80% - 40%);
+  // same type operation, can't mix types eg pixels and percentages
+  width: 80% - 40%;
   margin: 0 auto;
 
   #{&}-title {
